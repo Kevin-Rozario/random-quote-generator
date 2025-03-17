@@ -28,6 +28,3 @@ coverage/
 # Temporary files
 *.tmp
 *.temp
-
-# Ignore public assets
-public/

@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./output.css" />
-    <title>Quote Generator</title>
-  </head>
-  <body
-    class="w-full h-screen flex flex-col justify-center items-center bg-[url(../public/quote-bg.jpg)] bg-cover"
-  >
-    <div
-      class="w-[80%] flex flex-col justify-center items-center gap-8 bg-white/50 backdrop-blur-sm p-10 rounded-[20px]"
-      id="main"
-    >
-      <div class="absolute top-6 right-6">
-        <div class="tooltip" data-tip="copy" id="copy-tooltip">
-          <button class="btn btn-circle w-10 h-10" id="copy-button">
-            <img  class="w-6 h-6" src="../public/copy.png" alt="copy-icon">
-          </button>
-        </div>
-      </div>
-      <h1 class="text-xl text-black font-serif" id="title">
-        Random Quote Generator
-      </h1>
-      <div
-        class="card w-full h-full flex flex-col flex-wrap justify-center items-center gap-10"
-        id="quote-box"
-      >
-        <div
-          class="text-5xl text-black font-bold text-center font-[Oswald]"
-          id="quote"
-        >
-          Some Quote...
-        </div>
-        <div
-          class="font-semibold bottom-10 text-black font-[Oswald]"
-          id="quote-author"
-        >
-          - Author
-        </div>
-      </div>
-      <div class="w-full h-16 relative">
-        <button
-          class="w-32 h-12 absolute bottom-0 right-0 btn rounded-lg font-serif"
-          id="get-quote"
-        >
-          Get Quote
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>Quote Generator</title>
+  <style>
+    body {
+      background-image: url("../public/bg7.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: background-image 1s ease-in-out;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0.5;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body class="w-full h-screen flex flex-col justify-center items-center">
+  <div class="w-[80%] flex flex-col justify-center items-center gap-8 bg-white/50 backdrop-blur-sm p-10 rounded-[20px]"
+    id="main">
+    <div class="absolute top-6 right-6">
+      <div class="tooltip" data-tip="copy" id="copy-tooltip">
+        <button class="btn btn-circle w-10 h-10" id="copy-button">
+          <img class="w-6 h-6" src="../public/copy.png" alt="copy-icon" />
         </button>
       </div>
     </div>
-    <script src="./script.js"></script>
-  </body>
+    <h1 class="text-xl text-black font-serif" id="title">
+      Random Quote Generator
+    </h1>
+    <div class="card w-full h-full flex flex-col flex-wrap justify-center items-center gap-10" id="quote-box">
+      <div class="text-5xl text-black font-bold text-center font-[Oswald]" id="quote">
+        Some Quote...
+      </div>
+      <div class="font-semibold bottom-10 text-black font-[Oswald]" id="quote-author">
+        - Author
+      </div>
+    </div>
+    <div class="w-full h-16 relative">
+      <button
+        class="h-12 absolute bottom-0 left-0 btn rounded-lg font-serif bg-black border-none shadow-none text-white"
+        id="tweet-button">
+        <i class="fa-brands fa-x-twitter text-2xl"></i>
+        <p>Tweet Quote</p>
+      </button>
+      <button class="w-32 h-12 absolute bottom-0 right-0 btn rounded-lg font-serif border-none shadow-none"
+        id="get-quote">
+        New Quote
+      </button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
 </html>
