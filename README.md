@@ -1,35 +1,44 @@
 # Random Quote Generator
 
 ## Overview
-The **Random Quote Generator** is a simple web application that fetches and displays random quotes from an API. Users can generate a new quote at the click of a button and copy the quote to their clipboard with ease. The project is built using HTML, CSS (Tailwind), and JavaScript.
 
-![Quote generator output](quote-output.png)
+The **Random Quote Generator** is a lightweight and interactive web application designed to fetch and display random quotes from an API. Users can generate new quotes, copy them to their clipboard, and even share them directly on Twitter. The project utilizes HTML, Tailwind CSS, and JavaScript to create a visually engaging and responsive experience.
+
+![Quote Generator Preview](quote-output.png)
 
 ## Features
-- Fetches random quotes from an API
-- Displays quotes dynamically in a visually appealing interface
-- Provides an option to copy the quote to the clipboard
-- Implements a throttling mechanism to prevent excessive API calls
-- Uses Tailwind CSS for styling and responsive design
+
+- 🔄 Fetches random quotes from an API with a single click
+- ✨ Dynamic background image that changes with each new quote
+- 📋 Copy quotes to the clipboard with a single button click
+- 🐦 Share quotes directly to Twitter
+- ⏳ Implements API request throttling to prevent excessive calls
+- 🎨 Responsive and modern UI using Tailwind CSS
 
 ## Technologies Used
-- **HTML**: For structuring the webpage
-- **CSS (Tailwind CSS)**: For styling and layout
-- **JavaScript**: For dynamic functionality and API interaction
+
+- **HTML** – Structuring the webpage
+- **Tailwind CSS** – Styling and responsiveness
+- **JavaScript** – Dynamic functionality and API interactions
 
 ## Project Structure
+
 ```
 random-quote-generator/
 │-- public/
-│   ├── quote-bg.jpg      # Background image
-│   ├── copy.png          # Copy button icon
-│-- output.css            # Compiled Tailwind CSS
-│-- index.html            # Main HTML file
-│-- script.js             # JavaScript functionality
-│-- README.md             # Documentation
+│   ├── bg1.jpg       # Background images
+│   ├── bg2.jpg       # Background images
+│   ├── copy.png      # Copy button icon
+│-- output.css        # Tailwind compiled CSS
+│-- index.html        # Main HTML file
+│-- script.js         # JavaScript logic
+│-- README.md         # Project documentation
 ```
 
 ## Installation & Setup
+
+### 🔧 Steps to Run Locally
+
 1. Clone the repository:
    ```sh
    git clone https://github.com/your-username/random-quote-generator.git
@@ -38,31 +47,45 @@ random-quote-generator/
    ```sh
    cd random-quote-generator
    ```
-3. Open `index.html` in a browser to run the application.
+3. Open `index.html` in your browser to use the application.
 
-## Usage
-- Click the **Get Quote** button to fetch and display a random quote.
-- Click the **Copy** button to copy the displayed quote to the clipboard.
-- Quotes are fetched from `https://api.freeapi.app/api/v1/public/quotes/quote/random`.
+## Usage Guide
+
+- Click **New Quote** to fetch a random quote.
+- Click **Copy** to copy the displayed quote to your clipboard.
+- Click **Tweet Quote** to share it directly on Twitter.
+- Background image updates dynamically with each quote.
 
 ## JavaScript Functionality
-- **Fetching Quotes**: The app uses the `fetchQuote()` function to retrieve quotes from the API asynchronously.
-- **Throttling API Requests**: A throttling mechanism (`throttleFn()`) ensures that API requests are not made too frequently.
-- **Updating the UI**: The fetched quote is dynamically displayed in the `#quote` and `#quote-author` elements.
-- **Copying Quotes**: The copy button uses `navigator.clipboard.writeText()` to copy the quote to the clipboard and provides feedback with a tooltip.
 
-## Future Enhancements
-- Add categories for filtering quotes.
-- Implement dark mode.
-- Save favorite quotes locally using `localStorage`.
-- Allow users to share quotes on social media.
+### 🛠 Core Functions
 
-## Contributing
-Feel free to contribute by submitting pull requests or reporting issues.
+- **Fetching Quotes**: Uses `fetchQuote()` to retrieve random quotes asynchronously.
+- **Throttling Requests**: `throttleFn()` prevents API overload by limiting request frequency.
+- **Updating UI**: Dynamically displays quotes in `#quote` and `#quote-author`.
+- **Copy to Clipboard**: Uses `navigator.clipboard.writeText()` for easy copying.
+- **Changing Backgrounds**: Selects a random background image on each new quote.
 
-## License
-This project is licensed under the MIT License.
+## Future Enhancements 🚀
+
+- 🔍 **Category-based filtering** for quotes
+- 🌙 **Dark mode** support
+- 📌 **Save favorite quotes** using localStorage
+- 🔗 **Social media sharing** beyond Twitter
+- 🎶 **Text-to-speech feature** for listening to quotes
+
+## Contributing 🤝
+
+Contributions are welcome! Feel free to fork the repository, submit pull requests, or report issues.
+
+## License 📜
+
+This project is licensed under the **MIT License**.
 
 ---
-**Author**: Kevin Rozario
-**GitHub**: [Your GitHub Profile](https://github.com/Kevin-Rozario)
+
+### 👤 Author: Kevin Rozario
+
+🔗 **GitHub**: [Kevin-Rozario](https://github.com/Kevin-Rozario)
+
+Happy Coding! 🎉
