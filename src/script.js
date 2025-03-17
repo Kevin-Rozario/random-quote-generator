@@ -2,13 +2,13 @@ const QUOTE_URL = "https://api.freeapi.app/api/v1/public/quotes/quote/random";
 const THROTTLE_DELAY = 2000;
 const options = { method: "GET", headers: { accept: "application/json" } };
 const bgImages = [
-  "./public/bg1.jpg",
-  "./public/bg2.jpg",
-  "./public/bg3.jpg",
-  "./public/bg4.jpg",
-  "./public/bg5.jpg",
-  "./public/bg6.jpg",
-  "./public/bg7.jpg",
+  "../assets/bg1.jpg",
+  "../assets/bg2.jpg",
+  "../assets/bg3.jpg",
+  "../assets/bg4.jpg",
+  "../assets/bg5.jpg",
+  "../assets/bg6.jpg",
+  "../assets/bg7.jpg",
 ];
 
 function getRandomIntInclusive(min, max) {
