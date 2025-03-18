@@ -6,7 +6,7 @@ const bgImages = [
   "./assets/bg2.jpg",
   "./assets/bg3.jpg",
   "./assets/bg4.jpg",
-  "..assets/bg5.jpg",
+  "./assets/bg5.jpg",
   "./assets/bg6.jpg",
   "./assets/bg7.jpg",
 ];
