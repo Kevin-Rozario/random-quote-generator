@@ -2,7 +2,7 @@
 
 A sleek, modern web application that generates random inspiring quotes with beautiful background images. Users can easily copy quotes to clipboard, save them as images, or share them directly on Twitter.
 
-![Quote Generator Screenshot](https://placeholder-image.com/quote-generator-screenshot.png)
+![Quote Generator Screenshot](outputs/hero.png)
 
 ## ✨ Features
 
@@ -16,7 +16,7 @@ A sleek, modern web application that generates random inspiring quotes with beau
 
 ## 🚀 Live Demo
 
-Experience the Quote Generator here: [Live Demo](https://your-deployment-link-here.com)
+Experience the Quote Generator here: [Quote Generator](https://random-quote-generator-plum.vercel.app)
 
 ## 🛠️ Technologies Used
 
@@ -30,8 +30,8 @@ Experience the Quote Generator here: [Live Demo](https://your-deployment-link-he
 ## 📱 Screenshots
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://placeholder-image.com/desktop-view.png" alt="Desktop View" width="48%">
-    <img src="https://placeholder-image.com/mobile-view.png" alt="Mobile View" width="48%">
+    <img src="outputs/desktop_view.png" alt="Desktop View" width="48%">
+    <img src="outputs/tab_view.png" alt="Tab View" width="48%">
 </div>
 
 ## 💻 Local Development
