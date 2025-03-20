@@ -27,13 +27,6 @@ Experience the Quote Generator here: [Quote Generator](https://random-quote-gene
 - External API integration
 - Font Awesome icons
 
-## 📱 Screenshots
-
-<div style="display: flex; justify-content: space-between;">
-    <img src="outputs/desktop_view.png" alt="Desktop View" width="48%">
-    <img src="outputs/tab_view.png" alt="Tab View" width="48%">
-</div>
-
 ## 💻 Local Development
 
 1. Clone the repository:
