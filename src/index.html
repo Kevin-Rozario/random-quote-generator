@@ -15,11 +15,11 @@
       background-repeat: no-repeat;
       transition: background-image 0.5s ease-in-out;
     }
-
   </style>
 </head>
 
 <body class="w-full h-screen flex flex-col justify-center items-center">
+  <canvas hidden id="quote-canvas"></canvas>
   <div class="w-[80%] flex flex-col justify-center items-center gap-8 bg-white/50 backdrop-blur-sm p-10 rounded-[20px]"
     id="main">
     <div class="absolute top-6 right-6">
@@ -29,6 +29,15 @@
         </button>
       </div>
     </div>
+    <a id="download-link">
+      <div class="absolute top-6 right-18">
+        <div class="tooltip" data-tip="save" id="save-tooltip">
+          <button class="btn btn-circle w-10 h-10" id="save-button">
+            <img class="w-6 h-6" src="./assets/download.svg" alt="save-icon" />
+          </button>
+        </div>
+      </div>
+    </a>
     <h1 class="text-xl text-black font-serif" id="title">
       Random Quote Generator
     </h1>

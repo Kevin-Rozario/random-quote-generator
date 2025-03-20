@@ -1,91 +1,83 @@
-# Random Quote Generator
+# Quote Generator
 
-## Overview
+A sleek, modern web application that generates random inspiring quotes with beautiful background images. Users can easily copy quotes to clipboard, save them as images, or share them directly on Twitter.
 
-The **Random Quote Generator** is a lightweight and interactive web application designed to fetch and display random quotes from an API. Users can generate new quotes, copy them to their clipboard, and even share them directly on Twitter. The project utilizes HTML, Tailwind CSS, and JavaScript to create a visually engaging and responsive experience.
+![Quote Generator Screenshot](https://placeholder-image.com/quote-generator-screenshot.png)
 
-![Quote Generator Preview](quote-output.png)
+## ✨ Features
 
-## Features
+- **Random Quote Generation**: Fetches unique quotes from a curated API
+- **Dynamic Backgrounds**: Changes background image with each new quote
+- **Copy to Clipboard**: Instantly copy quotes with attribution for sharing
+- **Image Export**: Save your favorite quotes as beautifully formatted PNG images
+- **Twitter Integration**: Share quotes directly to Twitter with one click
+- **Responsive Design**: Works seamlessly across desktop and mobile devices
+- **Elegant UI**: Clean interface with subtle animations and visual feedback
 
-- 🔄 Fetches random quotes from an API with a single click
-- ✨ Dynamic background image that changes with each new quote
-- 📋 Copy quotes to the clipboard with a single button click
-- 🐦 Share quotes directly to Twitter
-- ⏳ Implements API request throttling to prevent excessive calls
-- 🎨 Responsive and modern UI using Tailwind CSS
+## 🚀 Live Demo
 
-## Technologies Used
+Experience the Quote Generator here: [Live Demo](https://your-deployment-link-here.com)
 
-- **HTML** – Structuring the webpage
-- **Tailwind CSS** – Styling and responsiveness
-- **JavaScript** – Dynamic functionality and API interactions
+## 🛠️ Technologies Used
 
-## Project Structure
+- HTML5
+- CSS3 with Tailwind CSS
+- JavaScript (ES6+)
+- Canvas API for image generation
+- External API integration
+- Font Awesome icons
 
-```
-random-quote-generator/
-│-- public/
-│   ├── bg1.jpg       # Background images
-│   ├── bg2.jpg       # Background images
-│   ├── copy.png      # Copy button icon
-│-- output.css        # Tailwind compiled CSS
-│-- index.html        # Main HTML file
-│-- script.js         # JavaScript logic
-│-- README.md         # Project documentation
-```
+## 📱 Screenshots
 
-## Installation & Setup
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://placeholder-image.com/desktop-view.png" alt="Desktop View" width="48%">
+    <img src="https://placeholder-image.com/mobile-view.png" alt="Mobile View" width="48%">
+</div>
 
-### 🔧 Steps to Run Locally
+## 💻 Local Development
 
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/random-quote-generator.git
+   ```bash
+   git clone https://github.com/yourusername/quote-generator.git
    ```
+
 2. Navigate to the project directory:
-   ```sh
-   cd random-quote-generator
+   ```bash
+   cd quote-generator
    ```
-3. Open `index.html` in your browser to use the application.
 
-## Usage Guide
+3. Open `index.html` in your browser or use a live server extension.
 
-- Click **New Quote** to fetch a random quote.
-- Click **Copy** to copy the displayed quote to your clipboard.
-- Click **Tweet Quote** to share it directly on Twitter.
-- Background image updates dynamically with each quote.
+## 🔧 Configuration
 
-## JavaScript Functionality
+The application uses the following API:
+- Quote API: https://api.freeapi.app/api/v1/public/quotes/quote/random
 
-### 🛠 Core Functions
+You can modify API settings and other configurations in the `script.js` file.
 
-- **Fetching Quotes**: Uses `fetchQuote()` to retrieve random quotes asynchronously.
-- **Throttling Requests**: `throttleFn()` prevents API overload by limiting request frequency.
-- **Updating UI**: Dynamically displays quotes in `#quote` and `#quote-author`.
-- **Copy to Clipboard**: Uses `navigator.clipboard.writeText()` for easy copying.
-- **Changing Backgrounds**: Selects a random background image on each new quote.
+## 🎨 Customization
 
-## Future Enhancements 🚀
+- **Background Images**: Add your own images to the `assets` folder and update the `BACKGROUND_IMAGES` array in `script.js`
+- **Styling**: Modify the styling in `output.css` or directly in the HTML file
+- **Fonts**: The application uses Oswald and serif fonts by default, which can be changed in the CSS
 
-- 🔍 **Category-based filtering** for quotes
-- 🌙 **Dark mode** support
-- 📌 **Save favorite quotes** using localStorage
-- 🔗 **Social media sharing** beyond Twitter
-- 🎶 **Text-to-speech feature** for listening to quotes
+## 📝 To-Do / Future Enhancements
 
-## Contributing 🤝
+- [ ] Add category filters for quotes
+- [ ] Create user accounts to save favorite quotes
+- [ ] Implement dark mode
+- [ ] Add more social sharing options
+- [ ] Create a quote search functionality
 
-Contributions are welcome! Feel free to fork the repository, submit pull requests, or report issues.
+## 📄 License
 
-## License 📜
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This project is licensed under the **MIT License**.
+## 👏 Acknowledgements
+
+- [Free API App](https://freeapi.app) for providing the quotes API
+- [Tailwind CSS](https://tailwindcss.com) for styling utilities
 
 ---
 
-### 👤 Author: Kevin Rozario
-
-🔗 **GitHub**: [Kevin-Rozario](https://github.com/Kevin-Rozario)
-
-Happy Coding! 🎉
+Made with ❤️ by Kevin Rozario
